@@ -1,0 +1,63 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <h1 class="headline">PASSWORD GENERATOR</h1>
+    
+        <!-- random password  -->
+    <div class="display-container">                            <!--this is the custom attribue -->
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+        <button class="btn-copy" data-copy>
+            <span data-copyMsg></span>
+            <i class="fa-regular fa-clone"></i>
+         </button>
+    </div>
+        
+    
+        <!-- password length -->
+             <div class="input-container">
+                <div class="length-container">
+                    <p>Password Length</p>
+                     <p data-lengthNumber>0</p>
+             </div>
+        
+        <!-- slider -->
+        
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+        
+        <!-- labels and checkbox -->
+        <div class="check"><input type="checkbox" id="uppercase"><label for="uppercase">Includes Uppercase Letter</label></div>
+        <div class="check"><input type="checkbox" id="lowercase"><label for="lowercase">Includes Lowercase Letter</label></div>
+        <div class="check"><input type="checkbox" id="numbers"><label for="numbers">Includes Numbers</label></div>
+        <div class="check"><input type="checkbox" id="symbols"><label for="symbols">Includes Symbols</label></div>
+        <!-- strength -->
+        <div class="strength-container">
+            <p>strength</p>
+            <div class="indicator" data-indicator></div>
+        </div>
+        <!-- button -->
+        
+            <button class="generateButton">GENERATE PASSWORD</button>
+        
+     </div>
+    
+    
+    </div>
+</div>  
+    
+
+
+
+
+ <script src="index.js"></script> 
+ 
+ <script src="https://kit.fontawesome.com/6c3c80e870.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6c3c80e870.js" crossorigin="anonymous"></script>
+</body>
+</html>
